@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { Box } from '@chakra-ui/react';
+import Navbar from './components/navbar';
+import Home from './components/home';
+import About from './components/about';
+import Skills from './components/skills';
+import { techstack } from './assests/data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box maxW={'100vw'}
+    // p={5}
+    className="App">
+      <Navbar/>
+      <Box bg={'gray.100'}>
+        <section id="home"><Home /></section>
+        <section id="about" className="about section"><About /></section>
+        <section id="skills" ><Skills techstack={techstack} heading={"Skills"}/>
+        <Skills techstack={techstack} heading={"Tools"}/>
+        </section>
+        {/* <section id="projects"><Projects /></section> */}
+        {/* <section id="contact"><Contact /></section> */}
+      </Box>
+    </Box>
   );
 }
 
