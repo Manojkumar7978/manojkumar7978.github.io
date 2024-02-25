@@ -15,9 +15,9 @@ const onClickhandler = () => {
 
 const Home = () => {
     return (
-        <Box bg={'gray.100'} pt={20} pl={[0,30,60]} >
+        <Box bg={'gray.100'} pt={20} >
             <Flex pt={10} pb={20} flexDirection={['column', 'row', 'row']}
-             justifyContent={'left'} gap={[10, 10, 20]} alignItems={'center'}>
+             justifyContent={'center'} gap={[10, 20, 40]} alignItems={'center'}>
                 <Box>
                     <Image
                         className="home-img"
@@ -28,14 +28,16 @@ const Home = () => {
                     />
                 </Box>
                 <Box>
-                    <Heading display={'flex'} textAlign={'left'} size={'lg'}> Hi There! <span ><img width="40px"
+                    <Heading display={'flex'} textAlign={'left'}
+                    fontStyle={'italic'}
+                    size={['lg','2xl','2xl']}> Hi There! <span ><img width="40px"
                         src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt="👋" /></span> </Heading>
-                    <Heading textAlign={'left'} mt={2} size={'lg'} id="user-detail-name">I'm Manoj Kumar Padhy </Heading>
+                    <Heading textAlign={'left'} mt={2} size={['lg','2xl','2xl']} id="user-detail-name">I'm Manoj Kumar Padhy </Heading>
                     <TypeWriter />
                     <Flex mt={2}>
                         {/* this one */}
 
-                        <ButtonGroup gap={10} mt={5}>
+                        <ButtonGroup gap={10} mt={5} display={'flex'} flexWrap={'wrap'}>
                         <Button
                             id="resume-button-2"
                             colorScheme='teal' variant="solid"

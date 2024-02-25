@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 function TypeWriter() {
     return (
-        <Heading textAlign={'left'} mt={2} size={'lg'}>
+        <Heading textAlign={'left'} mt={2} size={['lg','xl','xl']}>
             <Typewriter
                 options={{
                     strings: [

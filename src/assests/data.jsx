@@ -1,3 +1,7 @@
+
+import swiggy from './swiggy.PNG'
+import zostel from './zostel.PNG'
+import todo from './todo.PNG'
 export const techstack = [
     {
         img: "https://cdn-icons-png.flaticon.com/128/174/174854.png",
@@ -52,39 +56,74 @@ export const techstack = [
 
 export const tools=[
     {
-        img:"",
+        img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
         name:"VS Code"
     },
     {
-        img:"",
+        img:"https://www.svgrepo.com/show/217753/github.svg",
         name:"Github"
     },
     {
-        img:"",
+        img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         name:"Git"
     },
     {
-        img:"",
+        img:"https://yt3.googleusercontent.com/X-rhKMndFm9hT9wIaJns1StBfGbFdLTkAROwm4UZ3n9ucrBky5CFIeeZhSszFXBgQjItzCD0SA=s900-c-k-c0x00ffffff-no-rj",
         name:"Postman"
     },
     {
-        img:"",
+        img:"https://vaishkiyarminal001.github.io/assets/img/icon/npm.png   ",
         name:"NPM"
     },
     {
-        img:"",
+        img:"https://vaishkiyarminal001.github.io/assets/img/icon/netlify.png",
         name:"Netlify"
     },
     {
-        img:"",
+        img:"https://vaishkiyarminal001.github.io/assets/img/icon/vercel.png",
         name:"Versel"
     },
     {
-        img:"",
+        img:"https://vaishkiyarminal001.github.io/assets/img/icon/canva.png",
         name:"Canva"
     },
     {
-        img:"",
+        img:"https://priyammondal.github.io/portfolio/assets/figma-6e79b3af.png",
         name:"Figma"
     },
+]
+
+export const projects = [
+    {
+        img: zostel,
+        title: "Zostel Clone",
+        desc: "Zostel website clone provides a seamless experience for booking affordable and comfortable accommodation for travelers.",
+        techstack: ['HTML', "CSS", "JavaScript", 'React', 'Chakra UI', 'Redux'],
+        github: "https://github.com/Manojkumar7978/zostelclone",
+        url: "https://drive.google.com/file/d/16c6mP4yIYGVapF_0JMwh8wmdrniJTzxt/view?usp=sharing"
+    },
+    {
+        img: swiggy,
+        title: "Swiggy Clone",
+        desc: "Swiggy website clone provides a reliable and convenient food delivery experience, allowing users to browse restaurants, order food, and track their delivery in real-time. ",
+        techstack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'TailWind'],
+        github: "https://github.com/shaad72345/SwiggyClone",
+        url: "https://voluble-custard-cbe365.netlify.app/index.html"
+    },
+    {
+        img: "https://github.com/seakash1204/bluemercury_clone/raw/main/111.PNG",
+        title: "Bluemercury Clone",
+        desc: "Bluemercury website clone offers a seamless e-commerce experience for users to browse and purchase beauty and skincare products. ",
+        techstack: ['HTML', "CSS", "JavaScript"],
+        github: "https://github.com/seakash1204/bluemercury_clone",
+        url: "https://luminous-cucurucho-42f444.netlify.app/"
+    },
+    {
+        img: todo,
+        title: "Todo Application",
+        desc: "A simple todo application is a software that helps users keep track of tasks or activities that need to be completed.",
+        techstack: ['HTML', "CSS", "JavaScript", "React", "Node JS", "Express"],
+        github: "https://github.com/Manojkumar7978/simpletodo",
+        url: "https://drive.google.com/file/d/16V0YhQpAxITMchEAPe5M64MFT8RvxNv8/view?usp=sharing"
+    }
 ]

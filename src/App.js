@@ -5,7 +5,10 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
-import { techstack } from './assests/data';
+import { techstack, tools } from './assests/data';
+import Activities from './components/activities';
+import Contact from './components/contact';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -17,10 +20,11 @@ function App() {
         <section id="home"><Home /></section>
         <section id="about" className="about section"><About /></section>
         <section id="skills" ><Skills techstack={techstack} heading={"Skills"}/>
-        <Skills techstack={techstack} heading={"Tools"}/>
+        <Skills techstack={tools} heading={"Tools"}/>
         </section>
-        {/* <section id="projects"><Projects /></section> */}
-        {/* <section id="contact"><Contact /></section> */}
+        <section id="projects"><Projects /></section>
+        <section id='activities'><Activities/></section>
+        <section id="contact"><Contact /></section>
       </Box>
     </Box>
   );
