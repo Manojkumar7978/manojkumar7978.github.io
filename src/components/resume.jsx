@@ -28,3 +28,28 @@ export default function Resume() {
         </div>
     )
 }
+
+export const Resume2 = ({ close }) => {
+
+    return (
+        <div>
+
+            <Button
+                w="full"
+                colorScheme='teal' variant="ghost"
+                _hover={{ textDecoration: 'none', bg: 'teal.50' }}
+                as={Link}
+                target="_blank"
+                href={MANOJ_PADHY_RESUME}
+                download={true}
+                onClick={() => {
+                    onClickhandler();
+                    close()
+                }}
+            >
+                Resume
+            </Button>
+
+        </div>
+    );
+}
